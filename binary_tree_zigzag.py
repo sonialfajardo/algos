@@ -7,8 +7,7 @@ class TreeNode(object):
 class TreePrinter:
 
   def zig_zag(self, root):
-    # normally left->right
-    # But, reverse every other result list
+    # Reverse every other result list
     if root is None:
         return []
 
@@ -20,8 +19,7 @@ class TreePrinter:
     left_to_right = True
 
     while len(stack) > 0:
-      # O(1)
-      current = stack.pop(0) 
+      current = stack.pop(0) # O(1)
       if current != None:
         # Add it to the current level
         current_level.append(current.val)
@@ -43,7 +41,6 @@ class TreePrinter:
           left_to_right = True
 
         # Reset level list
-        
         current_level = []
         if len(stack) > 0:
           # Append delimiter
