@@ -13,7 +13,7 @@ class TreeNode(object):
 class Solution(object):
     def level_order(self, root):
     	if root is None:
-    		return []
+            return []
 
     	# Temp list that will keep nodes in order with delimeter
     	temp_list = []
@@ -55,7 +55,6 @@ root.right.right = TreeNode(7)
 root.left.left.left = TreeNode(1)
 root.right.right.right = TreeNode(8)
  
-print root
 print "Level Order Traversal of binary tree is:"
 solution = Solution()
 solution.level_order(root)
